@@ -47,12 +47,13 @@ El sistema implementa relaciones complejas, mixins para timestamps, validaciones
 
 ```
 veturn_backend/
-|- models/               # SQLAlchemy models
-|- schemas/              # Pydantic schemas
+|-auth/                  #jwt, passlib
 |-crud/                 # Funciones CRUD por entidad
-|- routers/              # Endpoints FastAPI por recurso
 |- database/             # Configuración DB y Base
-|- helpers/
+|- helpers/            #por ahora vacio(solo timezone)
+|- models/               # SQLAlchemy models
+|- routers/              # Endpoints FastAPI por recurso
+|- schemas/              # Pydantic schemas
 |-main.py               # Entrada principal de FastAPI            
 |- requirements.txt      # Dependencias
 |- README.md             # Documentación
